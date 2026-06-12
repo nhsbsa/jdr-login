@@ -1,55 +1,35 @@
 {% extends "layout-volunteer-jdr.html" %}
 
-{% block beforeContent %}
-  <a class="nhsuk-back-link" href="#">
-    Back
-  </a>
-{% endblock %}
-
 {% block content %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <h1 class="nhsuk-heading-l">
-        Your details
+        Log into your account
       </h1>
-      <p>You've told us you are the carer. We need your details.</p>
 
       <form action="/form-handler" method="post" novalidate>
 
         <div class="nhsuk-form-group">
           <label class="nhsuk-label nhsuk-label--s" for="firstName">
-            First name
+            Email
           </label>
           <input class="nhsuk-input" id="firstName" name="firstName" type="text" autocomplete="given-name" spellcheck="false">
         </div>
 
         <div class="nhsuk-form-group">
           <label class="nhsuk-label nhsuk-label--s" for="lastName">
-            Last name
+            Password
           </label>
           <input class="nhsuk-input" id="lastName" name="lastName" type="text" autocomplete="family-name" spellcheck="false">
         </div>
 
-        <div class="nhsuk-form-group">
-          <label class="nhsuk-label nhsuk-label--s" for="relationship">
-            Relationship to the person being registered
-          </label>
-          <div class="nhsuk-hint" id="relationship-hint">
-            For example, a family member or friend
-          </div>
-          <input class="nhsuk-input" id="relationship" name="relationship" type="text" aria-describedby="relationship-hint" spellcheck="false">
-        </div>
-
-        <div class="nhsuk-form-group">
-          <label class="nhsuk-label nhsuk-label--s" for="phoneNumber">
-            Contact phone number
-          </label>
-          <input class="nhsuk-input nhsuk-input--width-20" id="phoneNumber" name="phoneNumber" type="tel" autocomplete="tel">
-        </div>
-
         <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
-          Continue
+          Log in
         </button>
+        
+        <p>
+          <a href="#" class="nhsuk-link">Forgotten password?</a>
+        </p>
 
       </form>
     </div>
