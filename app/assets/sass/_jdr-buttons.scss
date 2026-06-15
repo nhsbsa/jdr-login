@@ -1,0 +1,60 @@
+:root {
+  --Pink-1: #906;
+  --Pink-2: #a21774;
+  --Pink-3: #ac2e82;
+  --Pink-10: #ecd1e3;
+  --Pink-11: #f6e8f1;
+  --Turquoise-10: #e3f1f3;
+  --Turquoise-1: #63b1bc;
+  --Purple-1: #6f5091;
+  --Purple-9: #d8cfe1;
+  --Blue-10: #ddecf6;
+  --Blue-1: #4698cb;
+  --Orange-10: #ffedd6;
+  --Orange-1: #ff9e1b;
+  --White: #FFF;
+  --Black: #000;
+  --Black-11: #e8e8e8;
+  --gray: #5a5555;
+  --Disabled: #d1d1d1;
+  --Red: #d4351c;
+  --Yellow: #fd0;
+  --Border-shadow: #5a5555;
+}
+
+.jdr-button-pink {
+  background-color: var(--Pink-1);
+  color: var(--White);
+}
+
+.jdr-button-pink:hover {
+  background-color: var(--Yellow);
+  color: var(--Black);
+}
+
+.jdr-button-black {
+  background-color: var(--Black);
+  color: var(--White);
+}
+
+.jdr-button-black:hover {
+  background-color: var(--Yellow);
+  color: var(--Black);
+}
+
+.jdr-button-secondary-pink {
+  background-color: transparent;
+  color: var(--Pink-1);
+  border: 2px solid var(--Pink-1); /* This adds the surrounding pink border */
+  box-shadow: none; /* This removes the default NHS button shadow */
+}
+
+.jdr-button-secondary-pink:hover {
+  background-color: var(--Yellow);
+  color: var(--Black);
+  border-color: var(--Black); /* This ensures the border changes color on hover */
+}
+
+.jdr-link-pink {
+  color: var(--Pink-1);
+}
