@@ -1,0 +1,25 @@
+{% extends "layout-volunteer-jdr.html" %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+     
+      <h1 class="nhsuk-heading-l">
+        Log into your account
+      </h1>
+
+      <a href="/login-jdr-only" role="button" draggable="false" class="nhsuk-button jdr-button-pink" data-module="nhsuk-button">
+        Continue with email and password
+      </a>
+
+      <p>
+        <a href="https://prototype-nhs-login.herokuapp.com/nhslogin/enter-login-details?clientRequests=p5&registered=trueBefore&p0=trueNow&userIs=registered" role="button" draggable="false" class="nhsuk-button nhs-login-button" data-module="nhsuk-button">
+            Continue to NHS login
+        </a>
+      </p>
+
+    </div>
+  </div>
+
+</div>
+{% endblock %}

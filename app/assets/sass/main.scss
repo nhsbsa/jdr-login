@@ -4,3 +4,30 @@
 // Add your custom CSS/Sass styles below.
 @import "jdr-header-footer";
 @import "jdr-buttons";
+
+.nhs-login-button {
+  background-color: #005eb8;
+  color: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #003087; /* Adds the signature flat bottom depth */
+}
+
+.nhs-login-button:hover {
+  background-color: #004da3; /* Slightly darker shift for visual feedback */
+}
+
+.my-50-50-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; 
+}
+
+.jdr-container .nhsuk-button-group {
+  display: flex;
+  width: 100%;               /* Ensures the group takes up the full width to allow right-alignment */
+  justify-content: flex-end; /* Aligns buttons right when in a horizontal row (desktop) */
+  align-items: flex-end;   
+  margin-top: -30px;
+  margin-bottom: -20px;
+}

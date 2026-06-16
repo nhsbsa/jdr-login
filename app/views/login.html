@@ -23,20 +23,74 @@
           <input class="nhsuk-input" id="lastName" name="lastName" type="text" autocomplete="family-name" spellcheck="false">
         </div>
 
-        <button class="nhsuk-button jdr-button-pink" data-module="nhsuk-button" type="submit">
-          Log in
-        </button>
-        
         <p>
           <a href="#" class="nhsuk-link jdr-link-pink">Forgotten password?</a>
         </p>
 
+        <button class="nhsuk-button jdr-button-pink" data-module="nhsuk-button" type="submit">
+          Log in
+        </button>
+
+        <p>Or login using your NHS account</p>
+
         <p>
-          <a href="https://prototype-nhs-login.herokuapp.com/nhslogin/enter-login-details?clientRequests=p5&registered=trueBefore&p0=trueNow&userIs=registered" role="button" draggable="false" class="nhsuk-button" data-module="nhsuk-button">
-            NHS log in
+          <a href="https://prototype-nhs-login.herokuapp.com/nhslogin/enter-login-details?clientRequests=p5&registered=trueBefore&p0=trueNow&userIs=registered" role="button" draggable="false" class="nhsuk-button nhs-login-button" data-module="nhsuk-button">
+            Continue to NHS login
           </a>
         </p>
       </form>
     </div>
   </div>
+
+  <div class="my-50-50-grid">
+  <div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1 class="nhsuk-heading-l">
+        Log into your account
+      </h1>
+
+      <form action="/form-handler" method="post" novalidate>
+
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label nhsuk-label--s" for="firstName">
+            Email
+          </label>
+          <input class="nhsuk-input" id="firstName" name="firstName" type="text" autocomplete="given-name" spellcheck="false">
+        </div>
+
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label nhsuk-label--s" for="lastName">
+            Password
+          </label>
+          <input class="nhsuk-input" id="lastName" name="lastName" type="text" autocomplete="family-name" spellcheck="false">
+        </div>
+
+        <p>
+          <a href="#" class="nhsuk-link jdr-link-pink">Forgotten password?</a>
+        </p>
+
+        <button class="nhsuk-button jdr-button-pink" data-module="nhsuk-button" type="submit">
+          Log in
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+  <div>
+    <h1 class="nhsuk-heading-l">
+      Log in using your NHS account
+    </h1>
+
+    <p>Content about logging in using NHS account.</p>
+
+    <p>
+      <a href="https://prototype-nhs-login.herokuapp.com/nhslogin/enter-login-details?clientRequests=p5&registered=trueBefore&p0=trueNow&userIs=registered" role="button" draggable="false" class="nhsuk-button nhs-login-button" data-module="nhsuk-button">
+        Continue to NHS login
+      </a>
+    </p>
+
+  </div>
+</div>
 {% endblock %}
