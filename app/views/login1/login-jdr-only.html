@@ -3,35 +3,44 @@
 {% block content %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
-      <h1 class="nhsuk-heading-l">
-        Log into your account
-      </h1>
+      
 
-      <form action="/form-handler" method="post" novalidate>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
 
-        <div class="nhsuk-form-group">
-          <label class="nhsuk-label nhsuk-label--s" for="firstName">
-            Email
-          </label>
-          <input class="nhsuk-input" id="firstName" name="firstName" type="text" autocomplete="given-name" spellcheck="false">
-        </div>
+      <h1 class="nhsuk-heading-l">Log into your account</h1>
 
-        <div class="nhsuk-form-group">
-          <label class="nhsuk-label nhsuk-label--s" for="lastName">
-            Password
-          </label>
-          <input class="nhsuk-input" id="lastName" name="lastName" type="text" autocomplete="family-name" spellcheck="false">
-        </div>
+      <form action="/{{folder}}/{{subfolder}}/researcher-login" method="post" novalidate>
+  
+      {{ input({
+        id: "emailAddress",
+        name: "emailAddress",
+        type: "email",
+        classes: "nhsuk-input--width-20",
+        label: {
+          text: "Email address"
+        }
+      }) }}
 
-        <p>
-          <a href="#" class="nhsuk-link jdr-link-pink">Forgotten password?</a>
-        </p>
+      {{ passwordInput({
+        label: {
+          text: "Password"
+        },
+        id: "password",
+        name: "password",
+        classes: "nhsuk-input--width-20"
+      }) }}
 
-        <button class="nhsuk-button jdr-button-pink" data-module="nhsuk-button" type="submit">
-          Log in
-        </button>
+      <p><a href="/{{folder}}/{{subfolder}}/forgot-password" class="nhsuk-link jdr-link-pink">Reset your password</a></p>
+
+      <button class="nhsuk-button jdr-button-pink" data-module="nhsuk-button" type="submit">
+      Log in
+      </button>
 
       </form>
+
+    </div>
+  </div>
     </div>
   </div>
 

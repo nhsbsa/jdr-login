@@ -58,3 +58,23 @@
 .jdr-link-pink {
   color: var(--Pink-1);
 }
+
+/* Styles the password toggle button to match the pink secondary brand */
+.govuk-password-input__toggle,
+.nhsuk-password-input__toggle {
+  color: var(--Pink-1) !important;
+  border: 2px solid var(--Pink-1) !important;
+  background-color: transparent !important;
+  box-shadow: none !important; /* Removes the NHS blue inset shadow */
+  outline: none !important; /* Removes any default blue browser outlines */
+}
+
+/* Styles the hover state of the password toggle button */
+.govuk-password-input__toggle:hover,
+.nhsuk-password-input__toggle:hover {
+  background-color: var(--Yellow) !important;
+  color: var(--Black) !important;
+  border-color: var(--Black) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
