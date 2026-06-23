@@ -25,9 +25,14 @@
 
 .jdr-container .nhsuk-button-group {
   display: flex;
-  width: 100%;               /* Ensures the group takes up the full width to allow right-alignment */
-  justify-content: flex-end; /* Aligns buttons right when in a horizontal row (desktop) */
+  width: 100%;
+  justify-content: flex-end;
   align-items: flex-end;   
   margin-top: -30px;
   margin-bottom: -20px;
+}
+
+.jdr-contained-image {
+  max-width: 100%;
+  height: auto;
 }
