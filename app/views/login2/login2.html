@@ -1,41 +1,52 @@
 {% extends "layout-volunteer-jdr.html" %}
 
 {% block content %}
-  <div class="nhsuk-grid-row">
+  
+<div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
-      <h1 class="nhsuk-heading-l">
-        Log into your account
-      </h1>
 
-      <form action="/form-handler" method="post" novalidate>
+      <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
 
-        <div class="nhsuk-form-group">
-          <label class="nhsuk-label nhsuk-label--s" for="firstName">
-            Email
-          </label>
-          <input class="nhsuk-input" id="firstName" name="firstName" type="text" autocomplete="given-name" spellcheck="false">
-        </div>
+      <h1 class="nhsuk-heading-l">Log into your account</h1>
 
-        <div class="nhsuk-form-group">
-          <label class="nhsuk-label nhsuk-label--s" for="lastName">
-            Password
-          </label>
-          <input class="nhsuk-input" id="lastName" name="lastName" type="text" autocomplete="family-name" spellcheck="false">
-        </div>
+      <form action="/{{folder}}/{{subfolder}}/researcher-login" method="post" novalidate>
+  
+      {{ input({
+        id: "emailAddress",
+        name: "emailAddress",
+        type: "email",
+        classes: "nhsuk-input--width-20",
+        label: {
+          text: "Email address"
+        }
+      }) }}
 
-        <p>
-          <a href="#" class="nhsuk-link jdr-link-pink">Forgotten password?</a>
-        </p>
+      {{ passwordInput({
+        label: {
+          text: "Password"
+        },
+        id: "password",
+        name: "password",
+        classes: "nhsuk-input--width-20"
+      }) }}
 
-        <button class="nhsuk-button jdr-button-pink" data-module="nhsuk-button" type="submit">
-          Log in
-        </button>
+      <p><a href="/{{folder}}/{{subfolder}}/forgot-password" class="nhsuk-link jdr-link-pink">Reset your password</a></p>
+
+      <button class="nhsuk-button jdr-button-pink" data-module="nhsuk-button" type="submit">
+      Log in
+      </button>
+
+      </form>
+
+    </div>
+  </div>
 
         <br>
 
-        <h2>Login using your NHS account</h2>
+        <h2 class="nhsuk-heading-m">Login with NHS login</h2>
 
-        <p>Or login using your NHS account</p>
+        <p>Use this option if you registered for Join Dementia Research or Be Part of Research using your NHS login. NHS login is only available in England and Wales.</p>
 
         <p>
           <a href="https://prototype-nhs-login.herokuapp.com/nhslogin/enter-login-details?clientRequests=p5&registered=trueBefore&p0=trueNow&userIs=registered" role="button" draggable="false" class="nhsuk-button nhs-login-button" data-module="nhsuk-button">
