@@ -1,0 +1,44 @@
+{% extends "layout-volunteer-jdr.html" %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+     
+      
+
+       <div class="nhsuk-form-group">
+  <fieldset class="nhsuk-fieldset">
+    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+      <h1 class="nhsuk-fieldset__heading">
+        How do you want to log in to your account?
+      </h1>
+    </legend>
+    <div class="nhsuk-radios" data-module="nhsuk-radios">
+      
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="loginTypeAccount" name="loginTypeAccount" type="radio" value="Log in with GOV.UK One Login">
+        <label class="nhsuk-label nhsuk-radios__label" for="loginTypeAccount">
+          Log in with NHS login
+        </label>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="loginTypeAccount-2" name="loginTypeAccount" type="radio" value="Log in with email and password">
+        <label class="nhsuk-label nhsuk-radios__label" for="loginTypeAccount-2">
+          Log in with email and password
+        </label>
+      </div>
+
+    </div>
+  </fieldset>
+</div>
+
+<button class="nhsuk-button jdr-button-pink" data-module="nhsuk-button" type="submit">
+  Continue
+</button>
+
+    </div>
+  </div>
+
+</div>
+{% endblock %}
