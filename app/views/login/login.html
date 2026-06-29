@@ -8,7 +8,7 @@
       <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
 
-      <h1 class="nhsuk-heading-l">Log into your account</h1>
+      <h1 class="nhsuk-heading-l">Log in to your account</h1>
 
       <form action="/{{folder}}/{{subfolder}}/researcher-login" method="post" novalidate>
   
@@ -31,7 +31,9 @@
         classes: "nhsuk-input--width-20"
       }) }}
 
-      <p><a href="/{{folder}}/{{subfolder}}/forgot-password" class="nhsuk-link jdr-link-pink">Reset your password</a></p>
+      
+
+      <p><a href="/login/forgot-your-password" class="nhsuk-link jdr-link-pink">Forgot your password?</a></p>
 
       <button class="nhsuk-button jdr-button-pink" data-module="nhsuk-button" type="submit">
       Log in
@@ -44,9 +46,9 @@
 
         <br>
 
-        <h2 class="nhsuk-heading-m">Login with NHS login</h2>
+        <h2 class="nhsuk-heading-m">Log in with NHS login</h2>
 
-        <p>Use this option if you registered for Join Dementia Research or Be Part of Research using your NHS login. NHS login is only available in England and Wales.</p>
+        <p>Use this option if you registered for Join Dementia Research or Be Part of Research with NHS login. NHS login is only available in England, Wales and the Isle of Man.</p>
 
         <p>
           <a href="https://prototype-nhs-login.herokuapp.com/nhslogin/enter-login-details?clientRequests=p5&registered=trueBefore&p0=trueNow&userIs=registered" role="button" draggable="false" class="nhsuk-button nhs-login-button" data-module="nhsuk-button">
