@@ -1,0 +1,53 @@
+{% extends "layout-volunteer-jdr.html" %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+     
+      
+
+       <div class="nhsuk-form-group">
+  <fieldset class="nhsuk-fieldset">
+    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+      <h1 class="nhsuk-fieldset__heading">
+        How do you want to log in to your account?
+      </h1>
+    </legend>
+    <div class="nhsuk-radios" data-module="nhsuk-radios">
+      
+
+      <div class="nhsuk-radios" data-module="nhsuk-radios">
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-hints-2" name="exampleHints" type="radio" value="landline" aria-describedby="example-hints-2-item-hint">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
+          Log in with NHS login
+        </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-2-item-hint">
+          Use this option if you registered for Join Dementia Research or Be Part of Research with NHS login. NHS login is only available in England, Wales and the Isle of Man.
+        </div>
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-hints" name="exampleHints" type="radio" value="mobile" aria-describedby="example-hints-item-hint">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints">
+          Log in with email and password
+        </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-item-hint">
+          Use your email address and password if you registered for Join Dementia Research with your email address.
+        </div>
+      </div>
+      
+    </div>
+
+    </div>
+  </fieldset>
+</div>
+
+<button class="nhsuk-button jdr-button-pink" data-module="nhsuk-button" type="submit">
+  Continue
+</button>
+
+    </div>
+  </div>
+
+</div>
+{% endblock %}
